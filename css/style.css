@@ -1,0 +1,33 @@
+.loader-container {
+  width: 115px;
+  height: 65px;
+  position: relative;
+}
+
+.loader {
+  position: relative;
+  display: block;
+  width: 115px;
+  height: 65px;
+  background-image: url("../schoolcomms-infinity.svg");
+  background-repeat: no-repeat;
+}
+
+#loader_animated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115px;
+  height: 65px;
+}
+
+path{
+  stroke-dasharray: 157;
+  animation: dash 3s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 314;
+  }
+}
